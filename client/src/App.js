@@ -5,9 +5,11 @@ import Home from './Home';
 
 const config = {
   issuer: 'https://dev-811744.oktapreview.com/oauth2/default',
+  // eslint-disable-next-line camelcase
   redirect_uri: window.location.origin + '/implicit/callback',
+  // eslint-disable-next-line camelcase
   client_id: '0oaikfn4hb9Y6AU8H0h7'
-}
+};
 
 class App extends Component {
   render() {

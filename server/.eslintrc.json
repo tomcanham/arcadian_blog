@@ -1,0 +1,41 @@
+{
+  "extends": ["eslint:recommended"],
+  "env": {
+    "commonjs": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "camelcase": 1,
+    "curly": 2,
+    "dot-notation": 0,
+    "guard-for-in": 0,
+    "new-cap": [2, { "properties": false }],
+    "no-caller": 2,
+    "no-console": 1,
+    "no-empty": 2,
+    "no-eval": 2,
+    "no-implied-eval": 2,
+    "no-multi-str": 0,
+    "no-new": 2,
+    "no-plusplus": 0,
+    "no-undef": 2,
+    "no-use-before-define": [2, "nofunc"],
+    "no-unused-expressions": [2, { "allowShortCircuit": true, "allowTernary": true }],
+    "no-unused-vars": 1,
+    "max-len": 0,
+    "quotes": [2, "single"],
+    "semi": 2,
+    "strict": 2,
+    "wrap-iife": [2, "any"]
+  },
+  "root": true
+}
