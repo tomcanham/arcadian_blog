@@ -36,10 +36,6 @@ function getSessionFromCookie(signedCookie, secret) {
   }
 }
 
-function getUserForSession(session) {
-
-}
-
 module.exports = (app) => {
   const secret = app.get('secret');
 
@@ -52,7 +48,8 @@ module.exports = (app) => {
 
         if (session) {
           const username = session.sub;
-          console.log("USERNAME:", username);
+          // eslint-disable-next-line no-console
+          console.log('USERNAME:', username);
 
           req.session = session;
           res.cookie('sessionId', signedValue, { maxAge: MAX_AGE, signed: true });
